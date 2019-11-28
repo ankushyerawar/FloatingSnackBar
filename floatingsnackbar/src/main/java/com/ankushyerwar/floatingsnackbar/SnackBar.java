@@ -145,7 +145,7 @@ public class SnackBar {
     public static Snackbar custom(@NonNull View view, CharSequence text, @Duration int length,
                                   @DrawableRes int iconId, @ColorInt int backgroundColor,
                                   @ColorInt int textColor) {
-        return custom(iconId, view, text, length, backgroundColor,textColor);
+        return custom(iconId, view, text, length, backgroundColor, textColor);
     }
 
     @NonNull
@@ -171,9 +171,10 @@ public class SnackBar {
         TextView textView = view.findViewById(R.id.snackbar_text);
         textView.setTextSize(textSize);
         textView.setMaxLines(maxLines);
-        if (withIcon)
+        if (withIcon) {
             textView.setCompoundDrawablesWithIntrinsicBounds(resId, noVal, noVal, noVal);
-        textView.setCompoundDrawablePadding(textView.getResources().getDimensionPixelOffset(R.dimen.icon_padding));
+            textView.setCompoundDrawablePadding(textView.getResources().getDimensionPixelOffset(R.dimen.icon_padding));
+        }
     }
 
     private static Snackbar build(@NonNull View view, @StringRes int resId, @Duration int length,
