@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/ankushyerawar/FloatingSnackBar.svg)](https://jitpack.io/#ankushyerawar/FloatingSnackBar)
+
 # Prerequisites
 
 	allprojects {
