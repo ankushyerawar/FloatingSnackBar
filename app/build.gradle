@@ -4,7 +4,7 @@ ext.versionMajor = 0
 ext.versionMinor = 1
 ext.versionPatch = 0
 ext.versionClassifier = null
-ext.isSnapshot = true
+ext.isSnapshot = false
 ext.minimumSdkVersion = 21
 
 android {
