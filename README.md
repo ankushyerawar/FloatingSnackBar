@@ -1,17 +1,18 @@
 # Prerequisites
 
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
+	allprojects {
+			repositories {
+				...
+				maven { url 'https://jitpack.io' }
+			}
 		}
-	}
   
 # Dependency
 
-dependencies {
-	        implementation 'com.github.ankushyerawar:FloatingSnackBar:0.1.0'
-	}
+	dependencies {
+			implementation 'com.google.android.material:material:1.0.0'
+			implementation 'com.github.ankushyerawar:FloatingSnackBar:0.1.0'
+		}
 
 
 # FloatingSnackBar
