@@ -1,5 +1,6 @@
 package com.ankushyerwar.floatingsnackbar;
 
+import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.util.Log;
 import android.view.View;
@@ -138,6 +139,20 @@ public class SnackBar {
     @CheckResult
     public static Snackbar normal(@NonNull View view, @StringRes int resId, @Duration int length) {
         return build(view, resId, length, Type.DEFAULT, withNoIcon);
+    }
+
+    @NonNull
+    @CheckResult
+    public static Snackbar normal(@NonNull View view, CharSequence text, @Duration int length,
+                                  @DrawableRes int iconId) {
+        return custom(iconId, view, text, length, Type.DEFAULT.getBackColor(), Type.DEFAULT.getTextColor());
+    }
+
+    @NonNull
+    @CheckResult
+    public static Snackbar normal(@NonNull View view, @StringRes int resId, @Duration int length,
+                                  @DrawableRes int iconId) {
+        return custom(iconId, view, resId, length, Type.DEFAULT.getBackColor(), Type.DEFAULT.getTextColor());
     }
 
     @NonNull
@@ -310,10 +325,20 @@ public class SnackBar {
 
         private int iconResId;
         private int backResId;
+        private int textColor = Color.WHITE;
+        private int backColor = Color.DKGRAY;
 
         Type(@DrawableRes int iconResId, @DrawableRes int backResId) {
             this.iconResId = iconResId;
             this.backResId = backResId;
+        }
+
+        public int getBackColor() {
+            return backColor;
+        }
+
+        public int getTextColor() {
+            return textColor;
         }
 
         public int getIcon() {

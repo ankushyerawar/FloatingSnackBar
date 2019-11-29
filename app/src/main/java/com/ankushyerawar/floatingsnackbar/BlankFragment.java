@@ -11,10 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.ankushyerwar.floatingsnackbar.SnackBar;
-import com.google.android.material.snackbar.Snackbar;
 
 public class BlankFragment extends Fragment {
 
@@ -38,27 +36,108 @@ public class BlankFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button mBtnSubmit = view.findViewById(R.id.btnSubmit);
+        Button mBtnSuccess = view.findViewById(R.id.btnSuccess);
+        Button mBtnError = view.findViewById(R.id.btnError);
+        Button mBtnWarning = view.findViewById(R.id.btnWarning);
+        Button mBtnInfo = view.findViewById(R.id.btnInfo);
+        Button mBtnNormal = view.findViewById(R.id.btnNormal);
+        Button mBtnCustom = view.findViewById(R.id.btnCustom);
 
-        mBtnSubmit.setOnClickListener(new View.OnClickListener() {
+        mBtnSuccess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                //Snackbar snackbar = Snackbar.make(getView(),R.string.app_name,Snackbar.LENGTH_SHORT).setAction()
+                //Here you can pass String id
+                SnackBar.success(view, R.string.app_name, SnackBar.LENGTH_LONG).show();
 
-                //SnackBar.success(view, R.string.app_name, SnackBar.LENGTH_LONG).show();
+                //Here you can pass String text
+                //SnackBar.success(view, "Sting Success", SnackBar.LENGTH_LONG).show();
 
-                SnackBar.custom(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_custom, Color.DKGRAY, Color.WHITE).show();
-
-                //SnackBar.error(getView(),R.string.app_name, SnackBar.LENGTH_LONG).show();
-
-                //SnackBar.warning(getView(),R.string.app_name, SnackBar.LENGTH_LONG).show();
-
-                //SnackBar.info(getView(),R.string.app_name, SnackBar.LENGTH_LONG).show();
-
-                //SnackBar.normal(getView(),R.string.app_name, SnackBar.LENGTH_LONG).show();
+                //Here you can specify if you want snackbar without icon
+                //SnackBar.success(view, "Sting Success", SnackBar.LENGTH_LONG, false).show();
 
             }
         });
+
+        mBtnError.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //Here you can pass String id
+                SnackBar.error(view,R.string.app_name, SnackBar.LENGTH_LONG).show();
+
+                //Here you can pass String text
+                //SnackBar.error(view,"String Error", SnackBar.LENGTH_LONG).show();
+
+                //Here you can specify if you want snackbar without icon
+                //SnackBar.error(view,"String Error", SnackBar.LENGTH_LONG,false).show();
+
+            }
+        });
+
+        mBtnWarning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //Here you can pass String id
+                SnackBar.warning(view,R.string.app_name, SnackBar.LENGTH_LONG).show();
+
+                //Here you can pass String text
+                //SnackBar.warning(view,"String Warning", SnackBar.LENGTH_LONG).show();
+
+                //Here you can specify if you want snackbar without icon
+                //SnackBar.warning(view,"String Warning", SnackBar.LENGTH_LONG, false).show();
+
+            }
+        });
+
+        mBtnInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //Here you can pass String id
+                SnackBar.info(view,R.string.app_name, SnackBar.LENGTH_LONG).show();
+
+                //Here you can pass String text
+                //SnackBar.info(view,"String Info", SnackBar.LENGTH_LONG).show();
+
+                //Here you can specify if you want snackbar without icon
+                //SnackBar.info(view,R.string.app_name, SnackBar.LENGTH_LONG,false).show();
+
+            }
+        });
+
+        mBtnNormal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //Here you can pass String id
+                //SnackBar.normal(view,R.string.app_name, SnackBar.LENGTH_LONG).show();
+
+                //Here you can pass String text
+                //SnackBar.normal(view,"String Normal", SnackBar.LENGTH_LONG).show();
+
+                //Here you can pass your icon
+                SnackBar.normal(view,R.string.app_name, SnackBar.LENGTH_LONG,R.drawable.ic_normal).show();
+
+            }
+        });
+
+        mBtnCustom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //Here you can pass String id
+                SnackBar.custom(view, R.string.app_name, SnackBar.LENGTH_LONG,
+                        R.drawable.ic_custom, Color.DKGRAY, Color.WHITE).show();
+
+                //Here you can pass String text
+                /*SnackBar.custom(view, "String Custom", SnackBar.LENGTH_LONG,
+                        R.drawable.ic_custom, Color.DKGRAY, Color.WHITE).show();*/
+
+            }
+        });
+
+        //
     }
 }
