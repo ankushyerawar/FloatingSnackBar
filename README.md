@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/ankushyerawar/FloatingSnackBar.svg)](https://jitpack.io/#ankushyerawar/FloatingSnackBar)
+[![](https://jitpack.io/v/ankushyerawar/FloatingSnackBar.svg)](https://jitpack.io/#ankushyerawar/FloatingSnackBar) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # FloatingSnackBar
 Gmail Style Floating Snackbar with Custom Functionality.
@@ -78,5 +78,13 @@ SnackBar.custom(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_cus
 # Pull Request
 
 Have some new ideas or found a `bug`? Do not hesitate to open an `issue` and make a `pull request`.
+
+# License
+
+This libreri is under MIT License. See the [License](https://github.com/ankushyerawar/FloatingSnackBar/blob/master/LICENSE) file for more info.
+
+
+
+
 
 
