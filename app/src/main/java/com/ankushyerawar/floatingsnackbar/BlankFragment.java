@@ -67,10 +67,10 @@ public class BlankFragment extends Fragment {
             public void onClick(View view) {
 
                 //Here you can pass String id
-                //SnackBar.error(view, R.string.app_name, SnackBar.LENGTH_LONG).show();
+                SnackBar.error(view, R.string.app_name, SnackBar.LENGTH_LONG).show();
 
                 //Here you can pass your own icon
-                SnackBar.error(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_normal).show();
+                //SnackBar.error(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_normal).show();
 
                 //Here you can pass String text
                 //SnackBar.error(view,"String Error", SnackBar.LENGTH_LONG).show();
@@ -86,10 +86,10 @@ public class BlankFragment extends Fragment {
             public void onClick(View view) {
 
                 //Here you can pass String id
-                //SnackBar.warning(view, R.string.app_name, SnackBar.LENGTH_LONG).show();
+                SnackBar.warning(view, R.string.app_name, SnackBar.LENGTH_LONG).show();
 
                 //Here you can pass your own icon
-                SnackBar.warning(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_normal).show();
+                //SnackBar.warning(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_normal).show();
 
                 //Here you can pass String text
                 //SnackBar.warning(view,"String Warning", SnackBar.LENGTH_LONG).show();
@@ -105,10 +105,10 @@ public class BlankFragment extends Fragment {
             public void onClick(View view) {
 
                 //Here you can pass String id
-                //SnackBar.info(view, R.string.app_name, SnackBar.LENGTH_LONG).show();
+                SnackBar.info(view, R.string.app_name, SnackBar.LENGTH_LONG).show();
 
                 //Here you can pass your own icon
-                SnackBar.info(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_normal).show();
+                //SnackBar.info(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_normal).show();
 
                 //Here you can pass String text
                 //SnackBar.info(view,"String Info", SnackBar.LENGTH_LONG).show();
@@ -124,13 +124,13 @@ public class BlankFragment extends Fragment {
             public void onClick(View view) {
 
                 //Here you can pass String id
-                //SnackBar.normal(view,R.string.app_name, SnackBar.LENGTH_LONG).show();
+                SnackBar.normal(view,R.string.app_name, SnackBar.LENGTH_LONG).show();
 
                 //Here you can pass String text
                 //SnackBar.normal(view,"String Normal", SnackBar.LENGTH_LONG).show();
 
                 //Here you can pass your icon
-                SnackBar.normal(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_normal).show();
+                //SnackBar.normal(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_normal).show();
 
             }
         });
@@ -149,7 +149,5 @@ public class BlankFragment extends Fragment {
 
             }
         });
-
-        //
     }
 }

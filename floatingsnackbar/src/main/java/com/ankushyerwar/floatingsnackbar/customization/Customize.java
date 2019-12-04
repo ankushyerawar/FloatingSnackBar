@@ -21,6 +21,10 @@ import static com.ankushyerwar.floatingsnackbar.utils.Constants.maxLines;
 import static com.ankushyerwar.floatingsnackbar.utils.Constants.noVal;
 import static com.ankushyerwar.floatingsnackbar.utils.Constants.textSize;
 
+/* Last Updated: 04\12\2019
+*  Author: Ankush Yerawar
+*/
+
 public class Customize {
 
     public static Snackbar defaultRes(@NonNull View view, @StringRes int resId, @Duration int length,
