@@ -33,6 +33,10 @@ First Release.
 **Version 1.0.0**
 
 Added a New Functionality to add icon to Normal Snackbar.
+
+**Version 1.0.1**
+
+Now you can change Icons of Default SnackBar Methods like success, error by passing Resource Id. 
 		
 
 # Usage
