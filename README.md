@@ -40,7 +40,7 @@ Now you can change Icons of Default SnackBar Methods like success, error by pass
 
 # Sneak Peek
 
-![Uploading device-2019-12-12-104334.gif…]()	
+![device-2019-12-12-104334](https://user-images.githubusercontent.com/47925684/70686013-083a4300-1cd1-11ea-9f5f-84b03bbe1258.gif)	
 
 # Usage
 
