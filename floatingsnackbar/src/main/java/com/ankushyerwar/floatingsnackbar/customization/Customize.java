@@ -22,59 +22,55 @@ import static com.ankushyerwar.floatingsnackbar.utils.Constants.noVal;
 import static com.ankushyerwar.floatingsnackbar.utils.Constants.textSize;
 
 /* Last Updated: 04\12\2019
-*  Author: Ankush Yerawar
+*  @author: Ankush Yerawar
 */
 
 public class Customize {
 
+    private static Snackbar makeSnack(@NonNull View view, @StringRes int resId, @Duration int length) {
+        return Snackbar.make(view, resId, length);
+    }
+
+    private static Snackbar makeSnack(@NonNull View view, CharSequence text, @Duration int length) {
+        return Snackbar.make(view, text, length);
+    }
+
     public static Snackbar defaultRes(@NonNull View view, @StringRes int resId, @Duration int length,
                                       Type type, boolean withIcon) {
 
-        Snackbar snackbar = Snackbar.make(view, resId, length);
-
-        return modify(snackbar, type, withIcon);
+        return modify(makeSnack(view, resId, length), type, withIcon);
     }
 
     public static Snackbar defaultChar(@NonNull View view, CharSequence text, @Duration int length,
                                        Type type, boolean withIcon) {
 
-        Snackbar snackbar = Snackbar.make(view, text, length);
-
-        return modify(snackbar, type, withIcon);
+        return modify(makeSnack(view, text, length), type, withIcon);
     }
 
     public static Snackbar customIcon(@NonNull View view, CharSequence text, @Duration int length,
                                       Type type, @DrawableRes int iconId) {
 
-        Snackbar snackbar = Snackbar.make(view, text, length);
-
-        return modifyIcon(snackbar,type,iconId);
+        return modifyIcon(makeSnack(view, text, length),type,iconId);
     }
 
     public static Snackbar customIcon(@NonNull View view, @StringRes int resId, @Duration int length,
                                       Type type, @DrawableRes int iconId) {
 
-        Snackbar snackbar = Snackbar.make(view, resId, length);
-
-        return modifyIcon(snackbar,type,iconId);
+        return modifyIcon(makeSnack(view, resId, length),type,iconId);
     }
 
     public static Snackbar customChar(@DrawableRes int iconId, @NonNull View view, CharSequence text,
                                       @Duration int length, @ColorInt int backgroundColor,
                                       @ColorInt int textColor) {
 
-        Snackbar snackbar = Snackbar.make(view, text, length);
-
-        return customModify(snackbar, iconId, textColor, backgroundColor);
+        return customModify(makeSnack(view, text, length), iconId, textColor, backgroundColor);
     }
 
     public static Snackbar customRes(@DrawableRes int iconId, @NonNull View view, @StringRes int resId,
                                      @Duration int length, @ColorInt int backgroundColor,
                                      @ColorInt int textColor) {
 
-        Snackbar snackbar = Snackbar.make(view, resId, length);
-
-        return customModify(snackbar, iconId, textColor, backgroundColor);
+        return customModify(makeSnack(view, resId, length), iconId, textColor, backgroundColor);
     }
 
     private static Snackbar modify(Snackbar snackbar, Type type, boolean withIcon) {
