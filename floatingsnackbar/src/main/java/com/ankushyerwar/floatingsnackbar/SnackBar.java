@@ -2,7 +2,6 @@ package com.ankushyerwar.floatingsnackbar;
 
 import android.view.View;
 
-import androidx.annotation.CheckResult;
 import androidx.annotation.NonNull;
 
 import com.ankushyerwar.floatingsnackbar.definations.ColorInt;
@@ -29,102 +28,86 @@ public class SnackBar {
     public static final int LENGTH_LONG = 0;
 
     @NonNull
-    @CheckResult
     public static Snackbar success(@NonNull View view, CharSequence text, @Duration int length, boolean withIcon) {
         return defaultChar(view, text, length, Type.SUCCESS, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar success(@NonNull View view, @StringRes int resId, @Duration int length, boolean withIcon) {
         return defaultRes(view, resId, length, Type.SUCCESS, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar success(@NonNull View view, CharSequence text, @Duration int length,
                                    @DrawableRes int iconId) {
         return customIcon(view, text, length, Type.SUCCESS, iconId);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar success(@NonNull View view, @StringRes int resId, @Duration int length,
                                    @DrawableRes int iconId) {
         return customIcon(view, resId, length, Type.SUCCESS, iconId);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar success(@NonNull View view, CharSequence text, @Duration int length) {
         return defaultChar(view, text, length, Type.SUCCESS, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar success(@NonNull View view, @StringRes int resId, @Duration int length) {
         return defaultRes(view, resId, length, Type.SUCCESS, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar error(@NonNull View view, CharSequence text, @Duration int length, boolean withIcon) {
         return defaultChar(view, text, length, Type.ERROR, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar error(@NonNull View view, @StringRes int resId, @Duration int length, boolean withIcon) {
         return defaultRes(view, resId, length, Type.ERROR, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar error(@NonNull View view, CharSequence text, @Duration int length,
                                    @DrawableRes int iconId) {
         return customIcon(view, text, length, Type.ERROR, iconId);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar error(@NonNull View view, @StringRes int resId, @Duration int length,
                                    @DrawableRes int iconId) {
         return customIcon(view, resId, length, Type.ERROR, iconId);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar error(@NonNull View view, CharSequence text, @Duration int length) {
         return defaultChar(view, text, length, Type.ERROR, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar error(@NonNull View view, @StringRes int resId, @Duration int length) {
         return defaultRes(view, resId, length, Type.ERROR, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar warning(@NonNull View view, CharSequence text, @Duration int length, boolean withIcon) {
         return defaultChar(view, text, length, Type.WARNING, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar warning(@NonNull View view, @StringRes int resId, @Duration int length, boolean withIcon) {
         return defaultRes(view, resId, length, Type.WARNING, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar warning(@NonNull View view, CharSequence text, @Duration int length,
                                  @DrawableRes int iconId) {
         return customIcon(view, text, length, Type.WARNING, iconId);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar warning(@NonNull View view, @StringRes int resId, @Duration int length,
                                  @DrawableRes int iconId) {
         return customIcon(view, resId, length, Type.WARNING, iconId);
@@ -132,84 +115,71 @@ public class SnackBar {
 
 
     @NonNull
-    @CheckResult
     public static Snackbar warning(@NonNull View view, CharSequence text, @Duration int length) {
         return defaultChar(view, text, length, Type.WARNING, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar warning(@NonNull View view, @StringRes int resId, @Duration int length) {
         return defaultRes(view, resId, length, Type.WARNING, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar info(@NonNull View view, CharSequence text, @Duration int length) {
         return defaultChar(view, text, length, Type.INFO, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar info(@NonNull View view, @StringRes int resId, @Duration int length) {
         return defaultRes(view, resId, length, Type.INFO, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar info(@NonNull View view, CharSequence text, @Duration int length,
                                    @DrawableRes int iconId) {
         return customIcon(view, text, length, Type.INFO, iconId);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar info(@NonNull View view, @StringRes int resId, @Duration int length,
                                    @DrawableRes int iconId) {
         return customIcon(view, resId, length, Type.INFO, iconId);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar info(@NonNull View view, CharSequence text, @Duration int length, boolean withIcon) {
         return defaultChar(view, text, length, Type.INFO, withIcon);
     }
 
 
     @NonNull
-    @CheckResult
     public static Snackbar info(@NonNull View view, @StringRes int resId, @Duration int length, boolean withIcon) {
         return defaultRes(view, resId, length, Type.INFO, withIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar normal(@NonNull View view, CharSequence text, @Duration int length) {
         return defaultChar(view, text, length, Type.DEFAULT, withNoIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar normal(@NonNull View view, @StringRes int resId, @Duration int length) {
         return defaultRes(view, resId, length, Type.DEFAULT, withNoIcon);
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar normal(@NonNull View view, CharSequence text, @Duration int length,
                                   @DrawableRes int iconId) {
         return customChar(iconId, view, text, length, Type.DEFAULT.getBackColor(), Type.DEFAULT.getTextColor());
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar normal(@NonNull View view, @StringRes int resId, @Duration int length,
                                   @DrawableRes int iconId) {
         return customRes(iconId, view, resId, length, Type.DEFAULT.getBackColor(), Type.DEFAULT.getTextColor());
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar custom(@NonNull View view, CharSequence text, @Duration int length,
                                   @DrawableRes int iconId, @ColorInt int backgroundColor,
                                   @ColorInt int textColor) {
@@ -217,7 +187,6 @@ public class SnackBar {
     }
 
     @NonNull
-    @CheckResult
     public static Snackbar custom(@NonNull View view, @StringRes int resId, @Duration int length,
                                   @DrawableRes int iconId, @ColorInt int backgroundColor,
                                   @ColorInt int textColor) {

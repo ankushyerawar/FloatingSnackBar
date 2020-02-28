@@ -12,4 +12,6 @@ public class Constants {
 
     public static final boolean withIcon = true;
     public static final boolean withNoIcon = false;
+
+    public static final String TAG = "SnackBar";
 }

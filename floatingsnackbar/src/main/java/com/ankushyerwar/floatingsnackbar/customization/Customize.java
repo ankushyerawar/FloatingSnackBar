@@ -1,6 +1,7 @@
 package com.ankushyerwar.floatingsnackbar.customization;
 
 import android.graphics.drawable.GradientDrawable;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -15,13 +16,14 @@ import com.ankushyerwar.floatingsnackbar.definations.StringRes;
 import com.ankushyerwar.floatingsnackbar.utils.Type;
 import com.google.android.material.snackbar.Snackbar;
 
+import static com.ankushyerwar.floatingsnackbar.utils.Constants.TAG;
 import static com.ankushyerwar.floatingsnackbar.utils.Constants.corner;
 import static com.ankushyerwar.floatingsnackbar.utils.Constants.margin;
 import static com.ankushyerwar.floatingsnackbar.utils.Constants.maxLines;
 import static com.ankushyerwar.floatingsnackbar.utils.Constants.noVal;
 import static com.ankushyerwar.floatingsnackbar.utils.Constants.textSize;
 
-/* Last Updated: 04\12\2019
+/** Last Updated: 04\12\2019
 *  @author: Ankush Yerawar
 */
 
@@ -86,7 +88,8 @@ public class Customize {
 
             return snackbar;
 
-        } catch (NullPointerException | ClassCastException ignored) {
+        } catch (NullPointerException | ClassCastException exception) {
+            Log.e(TAG,"Exception" + exception.getMessage());
         }
         return snackbar;
     }
@@ -104,7 +107,8 @@ public class Customize {
 
             return snackbar;
 
-        } catch (NullPointerException | ClassCastException ignored) {
+        } catch (NullPointerException | ClassCastException exception) {
+            Log.e(TAG,"Exception" + exception.getMessage());
         }
         return snackbar;
     }
@@ -123,7 +127,8 @@ public class Customize {
 
             return snackbar;
 
-        } catch (NullPointerException | ClassCastException ignored) {
+        } catch (NullPointerException | ClassCastException exception) {
+            Log.e(TAG,"Exception" + exception.getMessage());
         }
         return snackbar;
     }
