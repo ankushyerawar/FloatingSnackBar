@@ -92,7 +92,7 @@ Have some new ideas or found a `bug`? Do not hesitate to open an `issue` and mak
 
 # License
 
-This libreri is under MIT License. See the [License](https://github.com/ankushyerawar/FloatingSnackBar/blob/master/LICENSE) file for more info.
+This library is under MIT License. See the [License](https://github.com/ankushyerawar/FloatingSnackBar/blob/master/LICENSE) file for more info.
 
 
 
