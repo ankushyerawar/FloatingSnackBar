@@ -20,7 +20,7 @@ Add this in your root `build.gradle` file (not your module `build.gradle` file) 
 Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
 
 	dependencies {
-			implementation 'com.google.android.material:material:1.1.0'
+			implementation 'com.google.android.material:material:1.0.0'
 			implementation 'com.github.ankushyerawar:FloatingSnackBar:1.0.2'
 		}
 		
