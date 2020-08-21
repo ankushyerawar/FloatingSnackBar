@@ -141,7 +141,7 @@ public class BlankFragment extends Fragment {
 
                 //Here you can pass String id
                 SnackBar.custom(view, R.string.app_name, SnackBar.LENGTH_LONG,
-                        R.drawable.ic_custom, Color.DKGRAY, Color.WHITE).show();
+                        R.drawable.ic_custom, Color.DKGRAY, Color.WHITE,true).show();
 
                 //Here you can pass String text
                 /*SnackBar.custom(view, "String Custom", SnackBar.LENGTH_LONG,

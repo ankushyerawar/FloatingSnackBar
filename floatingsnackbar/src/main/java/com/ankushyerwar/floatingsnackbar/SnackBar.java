@@ -169,28 +169,28 @@ public class SnackBar {
 
     @NonNull
     public static Snackbar normal(@NonNull View view, CharSequence text, @Duration int length,
-                                  @DrawableRes int iconId) {
-        return customChar(iconId, view, text, length, Type.DEFAULT.getBackColor(), Type.DEFAULT.getTextColor());
+                                  @DrawableRes int iconId, boolean supportsRTL) {
+        return customChar(iconId, view, text, length, Type.DEFAULT.getBackColor(), Type.DEFAULT.getTextColor(), supportsRTL);
     }
 
     @NonNull
     public static Snackbar normal(@NonNull View view, @StringRes int resId, @Duration int length,
-                                  @DrawableRes int iconId) {
-        return customRes(iconId, view, resId, length, Type.DEFAULT.getBackColor(), Type.DEFAULT.getTextColor());
+                                  @DrawableRes int iconId, boolean supportsRTL) {
+        return customRes(iconId, view, resId, length, Type.DEFAULT.getBackColor(), Type.DEFAULT.getTextColor(), supportsRTL);
     }
 
     @NonNull
     public static Snackbar custom(@NonNull View view, CharSequence text, @Duration int length,
                                   @DrawableRes int iconId, @ColorInt int backgroundColor,
-                                  @ColorInt int textColor) {
-        return customChar(iconId, view, text, length, backgroundColor, textColor);
+                                  @ColorInt int textColor, boolean supportsRTL) {
+        return customChar(iconId, view, text, length, backgroundColor, textColor, supportsRTL);
     }
 
     @NonNull
     public static Snackbar custom(@NonNull View view, @StringRes int resId, @Duration int length,
                                   @DrawableRes int iconId, @ColorInt int backgroundColor,
-                                  @ColorInt int textColor) {
-        return customRes(iconId, view, resId, length, backgroundColor, textColor);
+                                  @ColorInt int textColor, boolean supportsRTL) {
+        return customRes(iconId, view, resId, length, backgroundColor, textColor, supportsRTL);
     }
 
 }
