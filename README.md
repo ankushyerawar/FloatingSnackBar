@@ -20,7 +20,7 @@ Add this in your root `build.gradle` file (not your module `build.gradle` file) 
 Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
 
 	dependencies {
-			implementation 'com.google.android.material:material:1.0.0'
+			implementation 'com.google.android.material:material:1.2.0'
 			implementation 'com.github.ankushyerawar:FloatingSnackBar:1.0.2'
 		}
 		
@@ -41,6 +41,11 @@ Now you can change Icons of Default SnackBar Methods like success, error by pass
 **Version 1.0.2**
 
 Some small changes and Error handling.
+
+**Version 1.0.3**
+
+Now supports material design librery 1.1.0 and 1.2.0.
+All new featrue to support text RTL.
 
 # Sneak Peek
 
@@ -79,8 +84,9 @@ SnackBar.normal(getView(),"Snackbar with icon", SnackBar.LENGTH_LONG, R.drawable
 ```
 You can also create your custom Snackbar with the custom() method:
 ```
-SnackBar.custom(view, R.string.app_name, SnackBar.LENGTH_LONG, R.drawable.ic_custom, Color.DKGRAY, Color.WHITE).show();
+SnackBar.custom(view, R.string.app_name, SnackBar.LENGTH_LONG,R.drawable.ic_custom, Color.DKGRAY, Color.WHITE,true).show();
 ```
+Here, This method also supports text rtl.
 
 # Extra
 
