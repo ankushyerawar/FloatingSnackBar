@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/ankushyerawar/FloatingSnackBar.svg)](https://jitpack.io/#ankushyerawar/FloatingSnackBar) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![](https://jitpack.io/v/ankushyerawar/FloatingSnackBar.svg)](https://jitpack.io/#ankushyerawar/FloatingSnackBar) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Ankush Yerawar's DEV Profile](https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg)](https://dev.to/ankushyerawar)
 
 # FloatingSnackBar
 Gmail Style Floating Snackbar with Custom Functionality.
