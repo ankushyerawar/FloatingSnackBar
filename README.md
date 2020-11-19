@@ -99,6 +99,11 @@ Have some new ideas or found a `bug`? Do not hesitate to open an `issue` and mak
 
 This library is under MIT License. See the [License](https://github.com/ankushyerawar/FloatingSnackBar/blob/master/LICENSE) file for more info.
 
+# Follow Me On
+
+<a href="https://dev.to/ankushyerawar">
+  <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Ankush Yerawar's DEV Profile" height="30" width="30">
+</a>
 
 
 
